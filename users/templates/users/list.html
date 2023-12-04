@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пользователи</title>
+</head>
+<body>
+    <h1>Пользователи</h1>
+    <div>
+            <ol>
+            {% for user in users %}
+                <li>
+                    <a href="./{{ user.id }}">{{ user.first_name }} {{ user.last_name }}</a>
+                    , {{ user.age }}</li>
+            {% endfor %}
+            </ol>
+    </div>
+    <div>{{ error_message }}</div>
+    <input type="button" value="Назад" onclick="history.back()">
+</body>
+</html>

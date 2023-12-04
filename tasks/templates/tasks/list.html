@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задачи</title>
+</head>
+<body>
+    <h1>Задачи</h1>
+    <div>
+        <ol>
+            {% for task in tasks %}
+                <li>
+                    <a href="./{{ task.id }}">{{ task.name }}</a>,
+                    {{ task.number }}, {{ task.duration }}
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+    <div>{{ error_message }}</div>
+    <input type="button" value="Назад" onclick="history.back()">
+</body>
+</html>

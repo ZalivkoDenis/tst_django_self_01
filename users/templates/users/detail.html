@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о пользователе</title>
+</head>
+<body>
+    <h1>Информация о пользователе</h1>
+    <p>
+        Имя: {{ user.first_name }}<br/>
+        Фамилия: {{ user.last_name }}<br/>
+        Возраст: {{ user.age }}<br/>
+        Телефон: {{ user.phone }}<br/>
+        Адрес: {{ user.address }}<br/>
+    </p>
+    <div>{{ error_message }}</div>
+    <input type="button" value="Назад" onclick="history.back()"/>
+</body>
+</html>
