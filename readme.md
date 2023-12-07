@@ -1,8 +1,7 @@
-
-
 ### ЗАДАЧА
 
-Страница со списком пользователей -> при нажатии на имя пользователя происходит переход на подробную информацию о нём.(назад)
+Страница со списком пользователей -> при нажатии на имя пользователя происходит переход на подробную информацию о нём.(
+назад)
 
 Страница со списком задач -> при нажатии на название задачи происходит переход на подробную информацию о ней.(назад)
 
@@ -13,18 +12,21 @@
 
 ---
 Перед началом тестирования можно заполнить БД, используя скрипт из файла проекта data_fill.sql:
+
 ```sqlite
 insert into users_user (first_name, last_name, age)
 values ('Ivan', 'Ivanov', 25),
-    ('Petr', 'Petrov', 30),
-    ('Alexey', 'Alexeev', 40);
+       ('Petr', 'Petrov', 30),
+       ('Alexey', 'Alexeev', 40);
 
-select * from users_user;
+select *
+from users_user;
 
 insert into tasks_task (name, number, duration)
 values ('Task 1', 1, 10),
-    ('Task 2', 2, 20),
-    ('Task 3', 3, 30);
+       ('Task 2', 2, 20),
+       ('Task 3', 3, 30);
 
-select * from tasks_task;
+select *
+from tasks_task;
 ```
